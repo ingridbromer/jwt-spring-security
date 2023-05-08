@@ -1,0 +1,23 @@
+spring:
+    datasource:
+        driverClassName: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/jwt?useTimezone=true&serverTimezone=UTC
+        username: ingrid
+        password: 123
+
+    jpa:
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL5Dialect
+        hibernate:
+            ddl-auto: update
+        show-sql: false
+
+
+flyway:
+    url: jdbc:mysql://localhost:3306/
+    schemas: jwt
+    username: ingrid
+    password: 123
+
+
